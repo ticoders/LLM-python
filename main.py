@@ -5,9 +5,9 @@ exa = Exa(api_key="826622aa-6069-447a-8d57-198325e95e99")
 query = input('Search here: ')
 response = exa.search(
   query,
-  num_results=10,
+  num_results=30,
   type='keyword',
-  include_domains=['https://www.tiktok.com'],
+  include_domains=['https://www.instagram.com/'],
 )
 for result in response.results:
   print(f'Title: {result.title}')
